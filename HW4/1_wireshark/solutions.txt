@@ -33,19 +33,39 @@ arbeers, Alexander Beers
 
 # Trace 3: Traceroute
 ## Briefly describe how the traceroute tool works including which network protocols are in use.
-	Traceroute is used to determine different paths between one machine/ip address to another.
+	Traceroute is used to determine a path between one machine/ip address to another.
+	A request to one ip may be routed through many machines before reaching its destination.
+	Traceroute can determine intermediate machines by specifying a maximum number of machines
+	a packet is allowed to visit. Once this number is reached, if the packet is not 
+	at the destination then the current machine returns an error.
 	Traceroute can use the ICMP and UDP protocol.
 ## Give the source IP address that issued the traceroute command and the destination IP address.
-
+	source: 192.168.0.100, Destination: 74.125.225.46
 ## List the IP addresses on the route between source and destination.
-
+	192.168.0.100
+	192.168.0.1
+	10.131.180.1
+	96.34.20.20
+	96.34.17.95
+	96.34.16.112
+	96.34.16.77
+	96.34.2.4
+	96.34.0.7
+	96.34.0.9
+	96.34.3.9
+	96.34.152.30
+	209.85.254.120
+	209.85.250.28
+	74.125.225.46
+	
 
 # Trace 4: POP
 ## What is the POP username and password?
-
+	1. cs155@dummymail.com whitehat
 ## How many emails are in the user's mailbox?
-
+	5 messages
 ## Give the contents of from, to, subject, and date for one email message.
-
+	From: harinym@stanford.edu To: cs155@dummymail.com subject: test message 
+	Date: Fri, 23 April 2010
 ## What email client (application) and operating system is this person using to send and receive email?
-
+	The client is using Thunderbird on Windows
