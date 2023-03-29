@@ -1,27 +1,40 @@
 # Write each team members UW ID and name in a separate line. One has been written below as an example
 
-badger642, FirstName LastName
+arbeers, Alexander Beers
 
 
 
 # Trace 1: HTTP
 ## Give three websites (domain Name and IP addresses) visited from source IP address `192.168.0.100`
+	1. www.bing.com, 198.105.254.25
+	2. www.amazon.com, 72.21.215.232
+	3. platform.maps.glbdns2.microsoft.com, 131.253.40.84
 
 ## Give three search queries and the domain of the site for each query made from source IP address `192.168.0.100`
+	1. www.bing.com, chicago metro
+	2. www.amazon.com, adventures in Stochastic Processes
+	3. platform.maps.glbdns2.microsoft.com, Searched for coordinates: 43.07, -89.38
 
 
 # Trace 2: FTP
 ## What is the user name and password used to connect to the FTP server?
+	1. shiningmoon, public
 
 ## List any (and all) files that were downloaded.
+	1. dragon.zip
+	2. ARP.java
+	3. L2Switch.java
+	4. phase1.html
 
 
 ## List the full path for two files (in different directories) on the FTP server that were NOT downloaded.
-
+	1. /TeNet/framework.build.110918.jar
+	2. '/phase1/StoreForwarding Datalink.java'
 
 # Trace 3: Traceroute
 ## Briefly describe how the traceroute tool works including which network protocols are in use.
-
+	Traceroute is used to determine different paths between one machine/ip address to another.
+	Traceroute can use the ICMP and UDP protocol.
 ## Give the source IP address that issued the traceroute command and the destination IP address.
 
 ## List the IP addresses on the route between source and destination.
