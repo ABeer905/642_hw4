@@ -10,6 +10,7 @@ $ python3 scanner.py example.pcap > out.txt
 Explanations:
 
 Arpspoofing:
+The arpspoof scanner checks to see if an Arp request is replied with a mac address different to the known mac address for a given ip. 
 
 Port scanning:
 
