@@ -135,14 +135,10 @@ for ip,packets in dst_packets.items():
 
 
 
-
-
-
-
 def output_synflood(ip: str, port: int, packets: list) -> None:
     print("SYN floods!")
     print("Dst IP: {0}".format(ip))
-    print("Dst Port: ", port)
+    print("Dst Port:", port)
     print("Packet number: ", end="")
     for idx in range(0, len(packets)):
       if idx > 0:
