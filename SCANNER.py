@@ -95,16 +95,7 @@ for ts, buf in pcap:
         if(dstport not in dst_packets[dst_ip]["port_nums"]):
             dst_packets[dst_ip]["port_nums"].append(dstport)
             dst_packets[dst_ip]["packet_nums"].append(packet_no)
-    
-    #TODO: portscan detection
-    #if
-    #    if dst_ip ="192.168.0.100"
-    #        dst_packets[0]
-    #    elif dst_ip ="192.168.0.103"
-    #        dst_packets[1]
-    #    elif dst_ip ="192.168.0.1"
-    #        dst_packets[2]
-    #TODO: 
+
     if(is_syn(protocol)):
         if(not is_tcp_handshake(protocol)):
             if dst_ip not in times:
@@ -132,9 +123,6 @@ def output_port_scan(values: dict, ip: str) -> None:
       if idx > 0:
         print(",", end=" ")
       print(packet, end="")
-      if idx > 100:
-        print()
-        break
 
 # detecting number of different ports
 for ip,packets in dst_packets.items():
@@ -142,7 +130,7 @@ for ip,packets in dst_packets.items():
     if(num_ports > 100):
     # do your outputting logic here...
         output_port_scan(packets, ip)
-        continue
+        print()
 
 
 
